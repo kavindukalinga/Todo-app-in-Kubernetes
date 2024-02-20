@@ -23,6 +23,17 @@ kubectl apply -f hogwartzapp.yml
 minikube service hogwartzapp
 ```
 
+### Credentials
+
+```bash
+# POSTGRES_USER
+echo "cG9zdGdyZXM=" | base64 --decode; echo
+
+# POSTGRES_PASSWORD
+echo "cG9zdGdyZXM=" | base64 --decode; echo
+
+```
+
 ### Verification
 
 ```bash
