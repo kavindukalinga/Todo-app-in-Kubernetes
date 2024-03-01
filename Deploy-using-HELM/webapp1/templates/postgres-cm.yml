@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.configmap.name }}
+data:
+  host: {{ .Values.db.svcName }}
+  name1: {{ .Values.configmap.t1 }}
+  name2: {{ .Values.configmap.t2 }}
